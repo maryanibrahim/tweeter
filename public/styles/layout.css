@@ -18,7 +18,22 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: "Source Sans 3", sans-serif;
+
 }
+
+/* Apply Bungee font to the Tweeter logo in the nav 
+added in nav.css (erase from here?)*/
+nav span {
+  font-family: "Bungee", cursive;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  background-color: inherit;
+}
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
