@@ -1,17 +1,33 @@
+@media only screen and (min-width: 1024px) {
+  .new-tweet,
+  #tweets-container {
+    width: 100%;
+  }
+}
+
+
 .container .new-tweet label {
   display: block;
   font-weight: bold;
-  margin-bottom: 10px;
-  border: none;
-  border-bottom: solid black 2px;
+ 
+  
+  
 }
 
-.container .new-tweet textarea {
-  width: 100%;
-  height: 100px;
-  padding: 8px;
-  border: 1px solid #ccc;
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+  background-color: #ffecec;
+  border: 1px solid #ff5c5c;
+  padding: 10px;
   border-radius: 4px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.error-message::before {
+  content: "⚠️ ";
 }
 
 .container .new-tweet button {
@@ -22,26 +38,32 @@
 
 .container .new-tweet output {
   font-weight: bold;
-  text-align: right;
+  float: right;
 }
 
 .container .new-tweet .counter.exceeded {
   color: red;
 }
 
+#tweet-text {
+  background-color: #f4f1ec;
+  padding: 0;
+  margin: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  width: 605px;
+  height: 59px;
+  border-bottom: solid black 2px;
+}
+
 .tweet {
-  background-color: white;
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   border-radius: 6px;
   padding: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
-}
-
-.tweet-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
 }
 
 .tweet-header img {
@@ -51,25 +73,22 @@
   margin-right: 10px;
 }
 
-.user-info {
-  flex-grow: 1;
+.tweet header .name {
+  font-weight: bold;
 }
 
-.username {
-  margin: 0;
-}
-
-.tweet-footer {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.tweet-content {
+.content {
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-bottom: solid black 2px;
 }
 
-.icon-container i {
-  margin-left: 10px;
+.timestamp {
+  float: left;
+}
+
+.icons {
+  text-align: right;
 }
 
 .tweet:hover {
